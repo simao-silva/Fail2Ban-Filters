@@ -7,16 +7,16 @@ banaction = iptables-multiport
 
 
 [apache-nohacking]
-enbaled = true
-port = http
-filter = apache-nohacking
-logpath = /var/log/httpd/*access_log
+enabled = true
+port 	= http
+filter 	= apache-nohacking
+logpath = /var/log/apache2/access.log
 maxretry = 1
 
 [apache-osinjection]
 enabled = true
-port = http
-filyer = apache-osinjection
-logpath = /var/log/httpd/*access.log
+port 	= http
+filter 	= apache-osinjection
+logpath = /var/log/apache2/access.log*
 maxretry = 1
 
